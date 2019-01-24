@@ -14,7 +14,7 @@ require_once JPATH_ADMINISTRATOR . '/components/com_finder/helpers/indexer/adapt
 /**
  * Indexes people from user profiles table.
  */
-class plgFinderPeopleSearch extends JPlugin
+class plgFinderPeopleSearch extends FinderIndexerAdapter
 {
     protected $autoloadLanguage = true;
 
@@ -115,7 +115,7 @@ class plgFinderPeopleSearch extends JPlugin
         // Convert the items to result objects.
         foreach ($rows as $row) {
             // Convert the item to a result object.
-            $item = ArrayHelper::toObject((array) $row, 'FinderIndexerResult');
+            $item = JArrayHelper::toObject($row, 'FinderIndexerResult');
 
             // Sort out endcoding stuff:
             #$item->summary  = $this->utf8_convert($item->summary);
