@@ -17,4 +17,21 @@
             <tag>stable</tag>
         </tags>
     </update>
+    <update>
+        <name>NPEU: plg_peoplesearch</name>
+        <description>Joomla! plg_peoplesearch plugin</description>
+        <element>peoplesearch</element>
+        <type>plugin</type>
+        <folder>finder</folder>
+        <version>1.0.1</version>
+        <client>site</client>
+        <infourl title="NPEU: plg_peoplesearch">https://github.com/NPEU/plg_peoplesearch/releases/tag/v1.0.1</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/NPEU/plg_peoplesearch/archive/v1.0.1.zip</downloadurl>
+        </downloads>
+        <targetplatform name="joomla" />
+        <tags>
+            <tag>stable</tag>
+        </tags>
+    </update>
 </updates>
