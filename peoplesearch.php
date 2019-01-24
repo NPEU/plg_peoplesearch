@@ -167,7 +167,7 @@ class plgFinderPeopleSearch extends FinderIndexerAdapter
         }
         // Only do the slow convert if there are 8-bit characters
         // Avoid using 0xA0 (\240) in ereg ranges. RH73 does not like that
-        if (!ereg("[\200-\237]", $text) && !ereg("[\241-\377]", $text)) {
+        if (!preg_match("[\200-\237]", $text) && !preg_match("[\241-\377]", $text)) {
             return $text;
         }
         // Decode three byte unicode characters
